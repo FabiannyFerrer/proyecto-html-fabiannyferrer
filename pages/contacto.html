@@ -16,7 +16,7 @@
              <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,22 +28,66 @@
             en menos de 24 horas hábiles.
         </p>
 
+    <section>
         <h2>Medios de contacto</h2>
             <ul>
                 <li>Email: <a href="mailto:ferrerfabiannyg@gmail.com">ferrerfabiannyg@gmail.com</a></li>
                 <li>WhatsApp: <a href="https://wa.me/5491100000000">+54 9 11 0000-0000</a></li>
             </ul>
+    </section>
 
+    <section>
         <h2>Horario de atención</h2>
-
         <p>Lunes a viernes, de 9 a 18 h.</p>
+    </section>
 
+    <section>
         <h2>Cómo trabajamos</h2>
-    
         <p>Primero analizamos el estado de tu cuenta y luego te proponemos 
         el servicio que mejor se ajusta a tu caso.
         </p>
+    </section>
 
+    <section>
+            <h2>Escribinos</h2>
+            <p>Completá el formulario y te contactamos para hacer un primer
+                análisis de tu cuenta. Todos los campos son obligatorios.
+            </p>
+
+            <form>
+                <p>
+                    <label for="nombre-apellido">Nombre y apellido</label><br>
+                    <input type="text" id="nombre-apellido" name="nombre-apellido" minlength="2" placeholder="Ej: Juan Pérez" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico</label><br>
+                    <input type="email" id="email" name="email" placeholder="Ej: juan@perez.com" required>
+                </p>
+
+                <p>
+                    <label for="productos">Cantidad aproximada de productos activos</label><br>
+                    <input type="number" id="productos" name="productos" min="1" placeholder="Ej: 50" required>
+                </p>
+
+                <p>
+                    <label for="servicio">Servicio de interés</label><br>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Elegí una opción</option>
+                        <option value="inventario">Verificación de inventario</option>
+                        <option value="cuenta">Monitoreo de salud de cuenta</option>
+                        <option value="resenas">Monitoreo de reseñas</option>
+                        <option value="todos">Todos los servicios</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Contanos sobre tu cuenta</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" minlength="10" placeholder="Ej: Tengo una cuenta de Amazon Seller Central..." required></textarea>
+                </p>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
     </main>
 
     <footer>
